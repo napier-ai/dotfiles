@@ -1,0 +1,3 @@
+#!/bin/bash
+brew install dotbot
+dotbot -d ~/.dotfiles -c ~/.dotfiles/install.conf.yaml 
