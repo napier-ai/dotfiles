@@ -1,0 +1,35 @@
+- defaults:
+    link:
+      relink: true
+
+- clean: ['~']
+
+- link:
+    ~/.aliases: aliases
+    ~/.gitconfig:
+      force: true
+      path: gitconfig
+    ~/.gitignore: gitignore
+    ~/.hushlogin: hushlogin
+    ~/.zshenv:
+      force: true
+      path: zshenv
+    ~/.zshrc:
+      force: true
+      path: zshrc
+    ~/.zprofile:
+      force: true
+      path: zprofile
+    ~/.config/starship.toml:
+      create: true
+      force: true
+      path: starship.toml
+
+- create:
+    - ~/Developer
+    - ~/.vim/undo-history
+
+- shell:
+  - [chmod 700 ~/Developer]
+  - [brew install starship, Install Starship Prompt]
+  - [eval "$(starship init zsh)"]
