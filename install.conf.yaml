@@ -26,10 +26,10 @@
       path: starship.toml
 
 - create:
-    - ~/Developer
+    - ~/Developer:
+      mode: 0700
     - ~/.vim/undo-history
 
 - shell:
-  - [chmod 700 ~/Developer]
   - [brew install starship, Install Starship Prompt]
   - [eval "$(starship init zsh)"]
