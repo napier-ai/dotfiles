@@ -1,3 +1,5 @@
+ZSH_DISABLE_COMPFIX=true
+
 # Aliases
 [[ -f ~/.aliases ]] && source ~/.aliases
 
