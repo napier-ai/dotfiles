@@ -1,3 +1,4 @@
 #!/bin/bash
+eval "$(/opt/homebrew/bin/brew shellenv)"
 brew install dotbot
 dotbot -d ~/.dotfiles -c ~/.dotfiles/install.conf.yaml 
