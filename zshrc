@@ -3,6 +3,9 @@ ZSH_DISABLE_COMPFIX=true
 # Aliases
 [[ -f ~/.aliases ]] && source ~/.aliases
 
+# Aliases.local
+[[ -f ~/.aliases.local ]] && source ~/.aliases.local
+
 # Load Starship
 [[ -f /opt/homebrew/bin/starship ]] && eval "$(starship init zsh)"
 
